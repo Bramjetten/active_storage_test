@@ -1,0 +1,7 @@
+# app/views/posts/index.html.erb
+<%= form_with model: @post, local: true do |form| %>
+  <%= form.text_field :title, placeholder: "Title" %><br>
+  <%= form.text_area :content %><br><br>
+  <%= form.file_field :image %><br>
+  <%= form.submit %>
+<% end %>
